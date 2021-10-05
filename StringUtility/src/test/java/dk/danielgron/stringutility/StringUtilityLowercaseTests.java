@@ -20,4 +20,16 @@ class StringUtilityLowercaseTests {
         assertEquals(expected, result);
     }
 
+    @Test
+    void when_lowercase_DEF_should_be_def() {
+        //Arrange
+        var expected = "def";
+
+        //Act
+        var result = StringUtilityApplication.lowercaseString("DEF");
+
+        //Assert
+        assertEquals(expected, result);
+    }
+
 }

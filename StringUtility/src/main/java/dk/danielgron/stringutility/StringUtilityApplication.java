@@ -16,10 +16,28 @@ public class StringUtilityApplication {
     }
 
     public static String capitalizeString(String input){
-        return "ABC";
+        char[] chars = input.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+            if ((int) chars[i] >= 97 && (int) chars[i] <= 122)
+                chars[i] = (char) ((int) chars[i] - 32);
+        }
+
+        String result = String.valueOf(chars);
+
+        return result;
     }
 
     public static String lowercaseString(String input){
-        return "abc";
+        char[] chars = input.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+            if ((int) chars[i] >= 65 && (int) chars[i] <= 90)
+                chars[i] = (char) ((int) chars[i] + 32);
+        }
+        
+        String result = String.valueOf(chars);
+
+        return result;
     }
 }
