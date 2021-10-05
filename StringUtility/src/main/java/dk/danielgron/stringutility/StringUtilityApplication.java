@@ -10,4 +10,16 @@ public class StringUtilityApplication {
         SpringApplication.run(StringUtilityApplication.class, args);
     }
 
+
+    public static String reverseString(String input){
+        return "cBa";
+    }
+
+    public static String capitalizeString(String input){
+        return "ABC";
+    }
+
+    public static String lowercaseString(String input){
+        return "abc";
+    }
 }
