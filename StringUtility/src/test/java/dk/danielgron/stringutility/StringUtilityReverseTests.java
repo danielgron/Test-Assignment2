@@ -20,4 +20,28 @@ class StringUtilityReverseTests {
         assertEquals(expected, result);
     }
 
+    @Test
+    void when_reverse_empty_should_be_empty() {
+        //Arrange
+        var expected = "";
+
+        //Act
+        var result = StringUtilityApplication.reverseString("");
+
+        //Assert
+        assertEquals(expected, result);
+    }
+
+    @Test
+    void when_reverse_a_should_be_a() {
+        //Arrange
+        var expected = "a";
+
+        //Act
+        var result = StringUtilityApplication.reverseString("a");
+
+        //Assert
+        assertEquals(expected, result);
+    }
+
 }

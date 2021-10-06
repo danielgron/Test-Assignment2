@@ -32,4 +32,16 @@ class StringUtilityLowercaseTests {
         assertEquals(expected, result);
     }
 
+    @Test
+    void when_lowercase_empty_should_be_empty() {
+        //Arrange
+        var expected = "";
+
+        //Act
+        var result = StringUtilityApplication.lowercaseString("");
+
+        //Assert
+        assertEquals(expected, result);
+    }
+
 }

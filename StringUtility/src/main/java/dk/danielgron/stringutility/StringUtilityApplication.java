@@ -12,7 +12,16 @@ public class StringUtilityApplication {
 
 
     public static String reverseString(String input){
-        return "cBa";
+        char[] chars = input.toCharArray();
+        char[] reversed = new char[chars.length];
+
+        for (int i = 1; i <= chars.length; i++) {
+            reversed[(chars.length) - i] = chars[i-1];
+        }
+
+        String result = String.valueOf(reversed);
+
+        return result;
     }
 
     public static String capitalizeString(String input){
